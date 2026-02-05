@@ -67,9 +67,9 @@ def printar_spinMachine(colunas): #vai organizar a saída
     for row in range(len(colunas[0])):
         for i, coluna in enumerate(colunas):
             if i != len(colunas) - 1: #verifica se é a ultima coluna, colocando um separador ou apenas o simbolo
-                print(coluna[row], end=" | ") #sem o end com o separador usado ( | ), o console quebraria linha
+                print( coluna[row], end=" | ") #sem o end com o separador usado ( | ), o console quebraria linha
             else:
-                print(coluna[row], end="")
+                print( coluna[row], end="")
 
         print() #uma forma manual de fazer o console quebrar linha
 
