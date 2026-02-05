@@ -8,17 +8,17 @@ ROWS = 3  # define a quantidade de linhas horizontais
 COLS = 3  # define a quantidade de colunas verticais
 
 contagem_simbolos = {  # dicionário que define os símbolos do jogo e sua frequência no sorteio
-    "A": 2,  #  aparece 2 vezes (mais raro)
-    "B": 4,
-    "C": 6,
-    "D": 8,  #  aparece 8 vezes (mais comum)
+    "♞": 2,  #  aparece 2 vezes (mais raro)
+    "♬": 4,
+    "✈": 6,
+    "☘": 8,  #  aparece 8 vezes (mais comum)
 }
 
 valor_simbolos = {  # dicionário que define os valores dos símbolos
-    "A": 5,
-    "B": 4,
-    "C": 3,
-    "D": 2,
+    "♞": 5,
+    "♬": 4,
+    "✈": 3,
+    "☘︎": 2,
 }
 
 
@@ -77,7 +77,7 @@ def printar_spinMachine(colunas): #vai organizar a saída
 # verificando quantia de deposito e garantindo que será um número inteiro e posito
 def deposito():
     while True:
-        quantia = input("Qual quantia será depositada? R$")
+        quantia = input("Qual quantia será depositada? Aposta máxima de 100, mínima de 1. R$")
 
         if not quantia.isdigit():
             print("Por favor, digite um número.")
